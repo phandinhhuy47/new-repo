@@ -1,0 +1,49 @@
+.verifi{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.verifi form{
+    margin-top: 6rem;
+}
+.verifi form input{
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    border-bottom:solid 2px gray;
+    border-radius: unset;
+    width: 4rem;
+    font-size: 2rem;
+    color: gray;
+}
+.countdown-box{
+    display: flex;
+    font-size: 1.5rem;
+    color: gray;
+}
+.countdown-box span{
+    display: block;
+    visibility: hidden;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0); /* Vị trí ban đầu */
+    }
+    25% {
+        transform: translateX(-10px); /* Rung sang trái */
+    }
+    50% {
+        transform: translateX(10px); /* Rung sang phải */
+    }
+    75% {
+        transform: translateX(-10px); /* Rung sang trái lần nữa */
+    }
+    100% {
+        transform: translateX(0); /* Quay lại vị trí ban đầu */
+    }
+}
+.shake-animation {
+    animation: shake 0.5s ease-in-out 1;
+}
